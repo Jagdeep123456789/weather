@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!-- Import Google Material Symbols Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+</head>
+<body>
+  
+  <main class="main-container">
+
+    <header class="input-container">
+      <input class="city-input" placeholder="SEARCH FOOD ITEM">
+      <button class="Search-btn">
+        <span class="material-symbols-outlined">
+          search
+        </span>
+      </button>
+    </header>
+       
+
+      <div class ="weather-summary-container">
+        <h1 class="temp-txt">Hey, Our delicious food is waiting for you <br>
+          We are always near to you with fresh item of food</h1>
+        <div class="weather-summary-info">
+          <h1 class="weather-summary-img"><img class="weather-summary-img" src="images/chic.png" alt=""></h1>
+         
+        </div>
+      </div>
+
+
+      <div class="container">
+        <!-- Products will be rendered here by JavaScript -->
+        <div id="root"></div>
+        
+        <!-- Sidebar for cart -->
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your Cart Is Empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+                <a href="index.html" class="button3">Back</a>
+                <a href="confirmation.html" class="button3" onclick="saveCartData()">Checkout</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file to handle dynamic content -->
+    <script src="addtocart.js"></script> <!-- This is important for the functionality -->
+    
+    <!-- Optional button for navigating back -->
+        
+       
+        
+        
+      </div>
+      
+    </section>
+    
+
+    <a href="menu.html" class="button5">View Menu</a>
+    <a href="menu.html" class="button6">SERVICE</a>
+
+    
+    
+  </main>
+
+</body>
+</html>
